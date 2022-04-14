@@ -33,7 +33,7 @@ de madeira, salvar sua amada do cavaleiro das trevas e, finalmente, chegar na Gr
         while (respArray[i] != "sim" && respArray[i] != "nao")
         {
             console.log("Você nao digitou uma informação valida para tal pergunta, vou perguntar denovo:");
-            respArray[i] = prompt(prgntArray[i])
+            respArray[i] = prompt(prgntArray[i]).toLowerCase()
         }
     }
 
@@ -83,7 +83,7 @@ de madeira, salvar sua amada do cavaleiro das trevas e, finalmente, chegar na Gr
     while(jogar != "nao" && jogar != "sim")
     {
         console.log("Você nao digitou uma informação valida para tal pergunta, vou perguntar denovo:");
-        jogar = prompt("Gostaria de se aventurar novamente ? Resposta: ");
+        jogar = prompt("Gostaria de se aventurar novamente ? Resposta: ").toLowerCase()
     }    
     if(jogar == "sim")
     {
