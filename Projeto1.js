@@ -2,8 +2,6 @@ const prompt = require('prompt-sync')();
 
 for(j = 0; j <1; j++)
 {
-
-
     console.log();
 
     let pergunta1 = "1 - O pistoleiro conseguiu passar pelos Grandes Artrópodes ? Resposta: ";
@@ -91,7 +89,6 @@ de madeira, salvar sua amada do cavaleiro das trevas e, finalmente, chegar na Gr
     {
         j = -1;
     }
-    
 }
 console.log();
 console.log("Fim de Jogo.");
