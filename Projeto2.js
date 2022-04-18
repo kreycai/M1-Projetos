@@ -20,6 +20,7 @@ for(let j = 0; j < 1; j++)
 console.log()
     console.log("JOGO JOKENPO !!!")
     console.log()
+    console.log()
 
     //rodadas
     let rodadas = +prompt("-DIGITE QUANTAS RODADAS VAMOS JOGAR, QUERIDO JOGADOR: ")
@@ -54,7 +55,7 @@ A NAO SER, É CLARO, QUE ESTEJA COM MEDO DE PERDER.`)
         }
         console.clear()
         console.log()
-        console.log(`-VOCÊ ESCOLHEU ${escolhas[minhaEscolha]}, EU ESCOLHI ${escolhas[variavelAleatoria]}.`)
+        console.log(`-VOCÊ ESCOLHEU ${escolhas[minhaEscolha]}, EU(MAQUINA) ESCOLHI ${escolhas[variavelAleatoria]}.`)
         console.log()
 
         //checar quem ganha a rodada.
@@ -63,7 +64,7 @@ A NAO SER, É CLARO, QUE ESTEJA COM MEDO DE PERDER.`)
             if(minhaEscolha == 0){console.log("-EMPATAMOS !")}
             else if(minhaEscolha == 1){console.log("-VOCÊ GANHOU ESSA RODADA, JOGADOR...")
             meusPontos ++}
-            else{console.log("-EU GANHEI DE VOCÊ NESSA RODADA, JOGADOR !!!")
+            else{console.log("-EU(MAQUINA) GANHEI DE VOCÊ NESSA RODADA, JOGADOR !!!")
             maqPontos ++}
         }
         else if(variavelAleatoria == 1)
