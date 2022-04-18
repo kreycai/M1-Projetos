@@ -137,8 +137,8 @@ A NAO SER, É CLARO, QUE ESTEJA COM MEDO DE PERDER.`)
         {
             j = -1
         }else{console.log('-ESTA COM MEDO DE PERDER NO DESEMPATE NAO É ? HAHAHAH; ADEUS, "JOGADOR".')}
-        console.clear()
     }
     maqPontos = 0;
     meusPontos = 0;
+    console.clear()
 }
