@@ -24,7 +24,10 @@ console.log()
 
     //rodadas
     let rodadas = +prompt("-DIGITE QUANTAS RODADAS VAMOS JOGAR, QUERIDO JOGADOR: ")
-    console.clear()
+    while(isNaN(rodadas)){
+        rodadas = +prompt("-NÃO TENHO TEMPO PARA BRINCADEIRAS ! DIGITE UM NUMERO PARA A QUANTIDADE DE RODADAS ! : ")        
+    }
+    console.clear
     for(i = 1; i <= rodadas; i++)
     {
         //gerar numero aleatorio
