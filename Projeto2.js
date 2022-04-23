@@ -12,7 +12,7 @@ function getRandomIntInclusive(min, max) {
 let minhaEscolha = 0;
 let meusPontos = 0;
 let maqPontos = 0;
-let escolhas = ["PEDRA", "PAPEL", "TESOURA"]
+let escolhas = ["SEGURANÇA" , "PEDRA", "PAPEL", "TESOURA"]
 
 //"for" para jogar novamente
 for(let j = 0; j < 1; j++)
@@ -24,36 +24,38 @@ console.log()
 
     //rodadas
     let rodadas = +prompt("-DIGITE QUANTAS RODADAS VAMOS JOGAR, QUERIDO JOGADOR: ")
+
     while(isNaN(rodadas)){
-        rodadas = +prompt("-NÃO TENHO TEMPO PARA BRINCADEIRAS ! DIGITE UM NUMERO PARA A QUANTIDADE DE RODADAS ! : ")        
+        rodadas = +prompt("-NÃO TENHO TEMPO PARA BRINCADEIRAS ! DIGITE UM NUMERO PARA A QUANTIDADE DE RODADAS ! : ")
     }
-    console.clear
+    console.clear()
     for(i = 1; i <= rodadas; i++)
     {
         //gerar numero aleatorio
         let variavelAleatoria = getRandomIntInclusive(0, 2);
 
-        console.log(`RODADA ${i}`)
+        console.log(`RODADA ${i}/${rodadas}`)
         console.log()
         console.log(`PLACAR:
         MAQUINA = ${maqPontos}
         JOGADOR = ${meusPontos}`)
         console.log(`
 OPÇÕES
-[0] PEDRA
-[1] PAPEL
-[2] TESOURA
+[1] PEDRA
+[2] PAPEL
+[3] TESOURA
 `)
         minhaEscolha = +prompt(`DIGITE O NUMERO DA OPÇÃO ESCOLHIDA: `)
+        console.clear
 
         //checar se a informação é valida
-        while(minhaEscolha != 0 && minhaEscolha !=1 && minhaEscolha != 2)
+        while(minhaEscolha != 1 && minhaEscolha !=2 && minhaEscolha != 3)
         {
             console.log()
             console.log(`-NÃO TENTE ME BURLAR, JOGADOR ! ESCOLHA UMA OPÇÃO VALIDA,
 A NAO SER, É CLARO, QUE ESTEJA COM MEDO DE PERDER.`)
         console.log()
-        minhaEscolha = +prompt('DIGITE O NUMERO DA OPÇÃO ESCOLHIDA(0, 1 OU 2): ')
+        minhaEscolha = +prompt('DIGITE O NUMERO DA OPÇÃO ESCOLHIDA(1, 2 OU 3): ')
         console.clear()
         }
         console.clear()
@@ -105,10 +107,10 @@ A NAO SER, É CLARO, QUE ESTEJA COM MEDO DE PERDER.`)
     if(maqPontos > meusPontos)
     {
         console.log("-EU VENCI VOCÊ, JOGADOR !!! QUER PERDER DE NOVO EM UMA REVANCHE ? ")
-        jogar = prompt("OU ESTA COM MEDO ?! (ACEITAR REVANCHE ? [S/N])").toLocaleLowerCase()
+        jogar = prompt("OU ESTA COM MEDO ?! (ACEITAR REVANCHE ? [S/N])").toLowerCase()
         while(jogar != "s" && jogar != "n")
         {
-            jogar = prompt("-COM MEDO DE NOVO ? DE UMA RESPOSTA VALIDA, MEDROSO ! (REVANCHE ? [S/N]")
+            jogar = prompt("-COM MEDO DE NOVO ? DE UMA RESPOSTA VALIDA, MEDROSO ! (REVANCHE ? [S/N]").toLowerCase()
         }
         if(jogar == "s")
         {
@@ -118,10 +120,10 @@ A NAO SER, É CLARO, QUE ESTEJA COM MEDO DE PERDER.`)
     else if(maqPontos < meusPontos)
     {
         console.log(`-AAAH !!! EU PERDI... TALVEZ VOCÊ NÃO SEJA TAO RUIM ASSIM`)
-        jogar = prompt("UMA REVANCHE ? DESSA VEZ VOU JOGAR SÉRIO ![S/N]").toLocaleLowerCase()
+        jogar = prompt("UMA REVANCHE ? DESSA VEZ VOU JOGAR SÉRIO ![S/N]").toLowerCase()
         while(jogar != "s" && jogar != "n")
         {
-            jogar = prompt("-COM MEDO DE NOVO ? DE UMA RESPOSTA VALIDA, MEDROSO ! (REVANCHE ? [S/N]")
+            jogar = prompt("-COM MEDO DE NOVO ? DE UMA RESPOSTA VALIDA, MEDROSO ! (REVANCHE ? [S/N]").toLowerCase()
         }
         if(jogar == "s")
         {
@@ -131,10 +133,10 @@ A NAO SER, É CLARO, QUE ESTEJA COM MEDO DE PERDER.`)
     else
     {
         console.log("-EMPATEI COM VOCÊ ?!! INADIMISSIVEL !")
-        jogar = prompt("UMA REVANCHE ? DESSA VEZ VOU JOGAR SÉRIO ![S/N]").toLocaleLowerCase()
+        jogar = prompt("UMA REVANCHE ? DESSA VEZ VOU JOGAR SÉRIO ![S/N]").toLowerCase()
         while(jogar != "s" && jogar != "n")
         {
-            jogar = prompt("-COM MEDO DE NOVO ? DE UMA RESPOSTA VALIDA, MEDROSO ! (REVANCHE ? [S/N]")
+            jogar = prompt("-COM MEDO DE NOVO ? DE UMA RESPOSTA VALIDA, MEDROSO ! (REVANCHE ? [S/N]").toLowerCase()
         }
         if(jogar == "s")
         {
