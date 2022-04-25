@@ -32,7 +32,7 @@ console.log()
     for(i = 1; i <= rodadas; i++)
     {
         //gerar numero aleatorio
-        let variavelAleatoria = getRandomIntInclusive(0, 2);
+        let variavelAleatoria = getRandomIntInclusive(1, 3);
 
         console.log(`RODADA ${i}/${rodadas}`)
         console.log()
