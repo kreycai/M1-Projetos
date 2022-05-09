@@ -211,6 +211,7 @@ ACOMPANHE...
     console.log(`
     A E ACOSTUME-SE AO QUE VAI LER, PORQUE VOU REPETIR ISSO AO MENOS TRÊS VEZES 
 TODO DIA: NAO HÁ NOVIDADES. VOCÊ ZEROU A VIDA ! E TEM A VIDA QUE ESCOLHEU TER.`)
+    Dia += 30
     fimz = true;
 
     },
@@ -252,12 +253,6 @@ TODO DIA: NAO HÁ NOVIDADES. VOCÊ ZEROU A VIDA ! E TEM A VIDA QUE ESCOLHEU TER.
         if(respArrayHistoriaManha[4]){
             console.log(`
             O GATO DE NÓS TODOS !!! -- VOCÊ DOOU O GATO PARA A GAROTINHA CHORONA`)
-            conquistas += 1
-        }
-        
-        if(respArrayHistoriaManha[3]){
-            console.log(`
-            TECNICO DE TV'S !!! -- VOCÊ CONCERTOU A TV E RECEBEU POR ISSO`)
             conquistas += 1
         }
         
@@ -1770,7 +1765,7 @@ VOCÊ SÓ TEM 400 REAIS, PRESTE ATENÇÃO AO STATUS E AO CUSTO DE SUAS AÇÕES, 
 É IMPORTANTE NOTAR QUE CADA ESCOLHA SUA AFETA AS POSSIBILIDADES FUTURAS,
 EXPLORE O JOGO E NO FIM VEJA QUANTAS CONQUISTAS VOCÊ CONSEGUIU !!!
 
-
+NAS PERGUNTAS, RESPONDE SEMPRE COM "S" OU "N" ([S/N])
 
 `)
 
