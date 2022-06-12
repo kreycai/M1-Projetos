@@ -1,5 +1,6 @@
 # PROJETOS DO MODULO 1
 
 Esses projetos são todos feitos com JavasCript puro(vanilla)
+criados no módulo introdutorio da escola BlueEdTech onde aprendemos a utilizar JS
 
-Para conteudos mais recentes, veja repositorios dos ultimos modulos
+PARA PROJETOS FUNCIONAIS E MAIS AVANÇADOS, VISE OS MODULOS SEGUINTES !
